@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FFFTextView">
+            <connections>
+                <outlet property="placeHolderLabel" destination="dac-xZ-Yt3" id="P04-WI-Byg"/>
+                <outlet property="textView" destination="RRj-Lp-gG5" id="85J-zl-vaw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="DI3-1T-xdW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="253" height="218"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="RRj-Lp-gG5">
+                    <rect key="frame" x="0.0" y="0.0" width="253" height="218"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                    <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="6lr-gI-dAA"/>
+                    </connections>
+                </textView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我是占位符" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dac-xZ-Yt3">
+                    <rect key="frame" x="0.0" y="5" width="76.5" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RRj-Lp-gG5" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2eu-7L-wal"/>
+                <constraint firstItem="dac-xZ-Yt3" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="8cf-l5-eXc"/>
+                <constraint firstAttribute="bottom" secondItem="RRj-Lp-gG5" secondAttribute="bottom" id="9Bq-jv-Qwf"/>
+                <constraint firstItem="dac-xZ-Yt3" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="Hqf-do-Gk9"/>
+                <constraint firstAttribute="trailing" secondItem="RRj-Lp-gG5" secondAttribute="trailing" id="Y2z-OA-nzL"/>
+                <constraint firstItem="RRj-Lp-gG5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oIc-De-EVX"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="15.199999999999999" y="-106.14692653673164"/>
+        </view>
+    </objects>
+</document>
